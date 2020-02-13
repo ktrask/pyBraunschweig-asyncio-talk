@@ -1,0 +1,13 @@
+version: '2'
+services:
+    postgres:
+        image: postgres
+        container_name: examplePostgres
+        environment:
+            POSTGRES_DB: exampledb
+            POSTGRES_USER: dbuser
+            POSTGRES_PASS: YeiCoo0dujih
+            ALLOW_IP_RANGE: 0.0.0.0/0
+        ports:
+            - 15432:5432
+        restart: always
